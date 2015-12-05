@@ -9,6 +9,8 @@
     <title>RasPi Server</title>
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Toggle CSS -->
+    <link href="css/bootstrap2-toggle.min.css" rel="stylesheet">
     <!-- Custom CSS -->
     <link href="css/one-page-wonder.css" rel="stylesheet">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -44,9 +46,9 @@
                     <li>
                         <a href="#tips">Tips</a>
                     </li>
-                    <li>
+                    <!--<li>
                         <a href="#more">More</a>
-                    </li>
+                    </li>-->
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <li class="page-scroll">
@@ -62,16 +64,14 @@
     <header class="header-image" id="header-image">
         <div class="headline">
             <div class="container">
-                <h3>Under Construction</h3>
                 <h1>RasPi Server</h1>
-                <h2>A Guide With Applications</h2>
-                <h3>Under Construction</h3>
+                <h2>NAS with ownCloud</h2>
             </div>
         </div>
     </header>
     <!-- Page Content -->
     <div class="container">
-        <!-- First Featurette -->
+        <!-- First Featurette -->`
         <hr class="featurette-divider" id="materials">
         <div class="featurette">           
             <!--<img class="featurette-image img-circle img-responsive pull-left" src="http://placehold.it/500x500">-->
@@ -87,33 +87,104 @@
                     <li data-target="#carousel-one" data-slide-to="0" class="active"></li>
                     <li data-target="#carousel-one" data-slide-to="1"></li>
                     <li data-target="#carousel-one" data-slide-to="2"></li>
+                    <li data-target="#carousel-one" data-slide-to="3"></li>
+                    <li data-target="#carousel-one" data-slide-to="4"></li>
+                    <li data-target="#carousel-one" data-slide-to="5"></li>
                 </ol>
                 <!-- Wrapper for slides -->
                 <div class="carousel-inner">
                     <div class="item active">
-                        <!--<img src="http://placehold.it/1200x315" alt="...">-->
-                        <img class="featurette-image img-circle img-responsive pull-left" src="http://placehold.it/500x500">
-                        <h2 class="featurette-heading">
-                            blah
-                            <span class="text-muted">blah blah</span>
-                        </h2>
-                        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+                        <div class="col-xs-12 col-sm-6 col-md-4">
+                            <img class="featurette-image img-responsive pull-left" src="img/materials/raspberrypi.jpg">
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-8">
+                            <h2 class="featurette-heading">
+                                Rasberry Pi
+                                <span class="text-muted"></span>
+                            </h2>
+                            <p class="lead">
+                                The obvious first thing you’ll need is a raspberry pi, the tiny computer on which your server will run. This will cost around $38 (as of Nov. 2015) on <a href='www.amazon.com/Raspberry-Pi-Model-Project-Board/dp/B00T2U7R7I/'>Amazon</a>.
+                            </p>
+                        </div>
                     </div>
                     <div class="item">
-                        <img class="featurette-image img-circle img-responsive pull-right" src="http://placehold.it/500x500">
-                        <h2 class="featurette-heading">
-                            blah
-                            <span class="text-muted">blah blah</span>
-                        </h2>
-                        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+                        <div class="col-xs-12 col-sm-6 col-md-8">
+                            <h2 class="featurette-heading">
+                                Micro SD Card
+                                <span class="text-muted"></span>
+                            </h2>
+                            <p class="lead">
+                                The operating system that we will be running the raspberry pi on will run natively from a micro sd card, like those in many android phones and small electronics. A 32 GB Micro SD only costs $10 on <a href='http://www.amazon.com/Samsung-Class-Adapter-MB-MP32DA-AM/dp/B00IVPU786/'>Amazon</a>, or you can get a smaller one for even less.
+                                <b>Note:</b> It is recommended that the Micro SD be at least 8 GB.
+                            </p>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-4">
+                            <img class="featurette-image img-responsive pull-right" src="img/materials/microsd.jpg">
+                        </div>                        
                     </div>
                     <div class="item">
-                        <img class="featurette-image img-circle img-responsive pull-left" src="http://placehold.it/500x500">
-                        <h2 class="featurette-heading">
-                            blah
-                            <span class="text-muted">blah blah</span>
-                        </h2>
-                        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+                        <div class="col-xs-6 col-sm-3 col-md-2">
+                            <img class="featurette-image img-responsive pull-right" src="img/materials/usbkeyboard.jpg">
+                        </div>
+                        <div class="col-xs-6 col-sm-3 col-md-2">
+                            <img class="featurette-image img-responsive pull-right" src="img/materials/usbmouse.jpg">
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-8">
+                            <h2 class="featurette-heading">
+                                USB Keyboard and Mouse
+                                <span class="text-muted"></span>
+                            </h2>
+                            <p class="lead">
+                                For the initial setup of the raspberry pi an usb keyboard and mouse will be plugged into two of the four usb ports on the pi. There are many other possible configurations – Bluetooth, SSH, VNC – that work equally well.
+                            </p>
+                            <p>USB Keyboard - $12 <a href='http://www.amazon.com/AmazonBasics-KU-0833-Wired-Keyboard/dp/B005EOWBHC/'> Amazon </a></p>
+                            <p>USB Mouse – $6 <a href='http://www.amazon.com/AmazonBasics-3-Button-Wired-Mouse-Black/dp/B005EJH6RW/'>Amazon</a></p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="col-xs-12 col-sm-6 col-md-4">
+                            <img class="featurette-image img-responsive pull-left" src="img/materials/wifidongle.jpg">
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-8">
+                            <h2 class="featurette-heading">
+                                USB WiFi Adapter
+                                <span class="text-muted"></span>
+                            </h2>
+                            <p class="lead">
+                                A wireless server is certainly not a requirement, just a matter of convenience. There are several WiFi adapters that work with Raspian out of the box, without any further configuration. The one I use is the Edimax Nano, which costs only $10 on <a href='http://www.amazon.com/Edimax-EW-7811Un-150Mbps-Raspberry-Supports/dp/B003MTTJOY/'>Amazon</a>.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="col-xs-12 col-sm-6 col-md-4">
+                            <img class="featurette-image img-circle img-responsive pull-left" src="img/materials/usbflashdrive.jpg">
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-8">
+                            <h2 class="featurette-heading">
+                                USB Storage
+                                <span class="text-muted"></span>
+                            </h2>
+                            <p class="lead">
+                                One requirement for a file server is that there be some place to store the files, ideally you have a 1 TB USB HDD lying around, if not you can use any old flash drive. This one from <a href='http://www.amazon.com/SanDisk-Cruzer-128GB-Drive--SDCZ36-128G-B35/dp/B00TKFCYP0/'> Amazon </a> is 128 GB and only costs $22.
+                                <b>Note:</b> Any USB Hard disk drives must be able to run on USB power supply.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="col-xs-12 col-sm-6 col-md-8">
+                            <h2 class="featurette-heading">
+                                Some other things to consider
+                                <span class="text-muted"></span>
+                            </h2>
+                            <p class="lead">
+                                There are some things that you probably already have, but you may need to purchase in order to complete this guide:
+                                <ul class="lead">
+                                    <li>HDMI Monitor</li>
+                                    <li>HDMI Cord</li>
+                                    <li>Micro USB Cord (for power)</li>
+                                </ul>
+                            </p>
+                        </div>
                     </div>
                 </div>
                 <!-- Controls -->
@@ -123,6 +194,7 @@
                 <a class="right carousel-control" href="#carousel-one" role="button" data-slide="next">
                     <span class="glyphicon glyphicon-chevron-right"></span>
                 </a>
+
             </div> <!-- Carousel -->
             <!-- Carousel 1 -->
         </div>
@@ -135,6 +207,16 @@
                 Steps:
                 <span class="text-muted">Start and finish your project</span>
             </h2>
+            <!--<div class="col-xs-8">
+                <h2 class="featurette-heading">
+                    Steps:
+                    <span class="text-muted">Start and finish your project</span>
+                </h2>
+            </div>
+            <p class="lead">Enable or Disable Steps as list</p>
+            <div class="checkbox">
+                <label><input type="checkbox" unchecked data-toggle="toggle" data-width="100" data-height="35" onclick="if (this.checked) { toggleCarouselList() }"></label>
+            </div>-->
             <!--<p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper.</p>-->
             <!-- Carousel 2 -->
             <div id="carousel-two" class="carousel slide" data-ride="carousel">
@@ -143,34 +225,172 @@
                     <li data-target="#carousel-two" data-slide-to="0" class="active">1</li>
                     <li data-target="#carousel-two" data-slide-to="1">2</li>
                     <li data-target="#carousel-two" data-slide-to="2">3</li>
+                    <li data-target="#carousel-two" data-slide-to="3">4</li>
+                    <li data-target="#carousel-two" data-slide-to="4">5</li>
+                    <li data-target="#carousel-two" data-slide-to="5">6</li>
+                    <li data-target="#carousel-two" data-slide-to="6">7</li>
+                    <li data-target="#carousel-two" data-slide-to="7">8</li>
+                    <li data-target="#carousel-two" data-slide-to="8">9</li>
+                    <li data-target="#carousel-two" data-slide-to="9">10</li>
+                    <li data-target="#carousel-two" data-slide-to="10">11</li>
+                    <li data-target="#carousel-two" data-slide-to="11">12</li>
+                    <li data-target="#carousel-two" data-slide-to="12">13</li>
+                    <li data-target="#carousel-two" data-slide-to="13">14</li>
+                    <li data-target="#carousel-two" data-slide-to="14">15</li>
                 </ol>
                 <!---->
                 <!-- Wrapper for slides -->
-                <div class="carousel-inner">
-                    <div class="item active">
+                <div class="carousel-inner carousel-toggle" id="carousel-toggle">
+                    <!--1-->
+                    <div class="item active" style="min-height:250px;">
                         <!--<img src="http://placehold.it/1200x315" alt="...">-->
-                        <img class="featurette-image img-circle img-responsive pull-right" src="http://placehold.it/500x500">
                         <h2 class="featurette-heading">
-                            blah
-                            <span class="text-muted">blah blah</span>
+                            Step 1:
+                            <span class="text-muted">Start with updating the distro</span>
                         </h2>
-                        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+                        <p class="lead">command <code>sudo apt-get update</code></p>
                     </div>
-                    <div class="item">
-                        <img class="featurette-image img-circle img-responsive pull-right" src="http://placehold.it/500x500">
+                    <!--2-->
+                    <div class="item" style="min-height:250px;">
                         <h2 class="featurette-heading">
-                            blah
-                            <span class="text-muted">blah blah</span>
+                            Step 2:
+                            <span class="text-muted">Let's add users to the www-data group</span>
                         </h2>
-                        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+                        <p class="lead">command <code>sudo usermod -a -G www-data www-data</code></p>
                     </div>
-                    <div class="item">
-                        <img class="featurette-image img-circle img-responsive pull-left" src="http://placehold.it/500x500">
+                    <!--3-->
+                    <div class="item" style="min-height:250px;">
                         <h2 class="featurette-heading">
-                            blah
-                            <span class="text-muted">blah blah</span>
+                            Step 3:
+                            <span class="text-muted">Next we'll install all the packages you will need, this will take some time</span>
                         </h2>
-                        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+                        <p class="lead">command<code>sudo apt-get install nginx openssl ssl-cert php5-cli php5-sqlite php5-gd php5-common php5-cgi sqlite3 php-pear php-apc curl libapr1 libtool curl libcurl4-openssl-dev php-xml-parser php5 php5-dev php5-gd php5-fpm memcached php5-memcache varnish</code></p>
+                    </div>
+                    <!--4-->
+                    <div class="item" style="min-height:250px;">
+                        <h2 class="featurette-heading">
+                            Step 4:
+                            <span class="text-muted">This command will create and walk you through writing the basic SSL certificate</span>
+                        </h2>
+                        <p class="lead">command <code>sudo openssl req $@ -new -x509 -days 730 -nodes -out /etc/nginx/cert.pem -keyout /etc/nginx/cert.key</code></p>
+                    </div>
+                    <!--5-->
+                    <div class="item" style="min-height:250px;">
+                        <h2 class="featurette-heading">
+                            Step 5:
+                            <span class="text-muted">Now change the privileges of the files you just referenced. This lets the file owner read and write to the file and is required for the next step.</span>
+                        </h2>
+                        <p class="lead">
+                            command <code>
+                                sudo chmod 600 /etc/nginx/cert.pem
+                                sudo chmod 600 /etc/nginx/cert.key
+                            </code>
+                        </p>
+                    </div>
+                    <!--6-->
+                    <div class="item" style="min-height:580px">
+                        <h2 class="featurette-heading">
+                            Step 6:
+                            <span class="text-muted">Next, we’ll change the nginx default config file. You can copy and paste the text at <a href="default.txt">this link</a> (or copy the file).</span>
+                        </h2>
+                        <p class="lead">command <code>sudo nano /etc/nginx/sites-available/default</code></p>
+                        <p class="lead">You will need to change one thing in this file. Replace the following with your raspberry pi’s ip address.</p>
+                        <p class="lead"><code>10.0.0.ip;	#your raspberry pi's ip here</code></p>
+                        <p class="lead"><b>Note:</b> If you’d like to access your server from somewhere outside your local network use your Global IP instead.</p>
+                    </div>
+                    <!--7-->
+                    <div class="item" style="min-height:300px;">
+                        <h2 class="featurette-heading">
+                            Step 7:
+                            <span class="text-muted">Now, we’ll edit the php.ini files to allow files of 2GB</span>
+                        </h2>
+                        <p class="lead">command <code>sudo nano /etc/php5/fpm/php.ini</code></p>
+                        <p class="lead">search for <code>upload_max_filesize</code> and set it to <code>2000M</code></p>
+                        <p class="lead">search for <code>post_max_size</code> and set it to <code>2000M</code><code></code></p>
+                    </div>
+                    <!--8-->
+                    <div class="item" style="min-height:350px;">
+                        <h2 class="featurette-heading">
+                            Step 8:
+                            <span class="text-muted">Next make the following two changes to the www.conf and dphys-swapfile file </span>
+                        </h2>
+                        <p class="lead">command <code>sudo nano /etc/php5/fpm/pool.d/www.conf</code></p>
+                        <p class="lead">Change <code>listen = /var/run/php5-fpm.sock</code> to <code>listen = 127.0.0.1:9000</code></p>
+                        <p class="lead">command <code>sudo nano /etc/dphys-swapfile</code>
+                        <p class="lead">Change <code>CONF_SWAPSIZE=100</code> to <code>CONF_SWAPSIZE=512 </code></p>
+                    </div>
+                    <!--9-->
+                    <div class="item" style="min-height:250px;">
+                        <h2 class="featurette-heading">
+                            Step 9:
+                            <span class="text-muted">Reboot the pi</span>
+                        </h2>
+                        <p class="lead">command <code>sudo reboot</code></p>
+                    </div>
+                    <!--10-->
+                    <div class="item" style="min-height:560px;">
+                        <h2 class="featurette-heading">
+                            Step 10:
+                            <span class="text-muted">Download and install owncloud, the server software, then clean up</span>
+                        </h2>
+                        <p class="lead">command <code>sudo mkdir -p /var/www/owncloud</code></p>
+                        <p class="lead">command <code>sudo wget https://download.owncloud.org/community/owncloud-8.0.2.tar.bz2</code></p>
+                        <p class="lead">command <code>sudo tar xvf owncloud-8.0.2.tar.bz2</code></p>
+                        <p class="lead">command <code>sudo mv owncloud/ /var/www/</code></p>
+                        <p class="lead">command <code>sudo chown -R www-data:www-data /var/www</code></p>
+                        <p class="lead">command <code>rm -rf owncloud owncloud-8.0.2.tar.bz2</code></p>
+                    </div>
+                    <!--11-->
+                    <div class="item" style="min-height:250px;">
+                        <h2 class="featurette-heading">
+                            Step 11:
+                            <span class="text-muted">Now plug in your USB storage or drive.</span>
+                        </h2>
+                        <p class="lead">Some of the next steps will vary depending on the USB file system of your device. This tutorial will include the steps for using FAT32 type file systems. <b>Note:</b> You may need to download the drivers for other filesystems, such as exfat, ntfs, etc…<code></code></p>
+                    </div>
+                    <!--12-->
+                    <div class="item" style="min-height:350px;">
+                        <h2 class="featurette-heading">
+                            Step 12:
+                            <span class="text-muted">Make a directory on your pi where the drive will be mounted, and mount the drive (if there is only one drive it will likely be located at /dev/sda1 as indicated below)</span>
+                        </h2>
+                        <p class="lead">command <code>sudo mkdir /media/owncloud</code></p>
+                        <p class="lead">command <code>sudo mount -t vfat -o uid=1000,gid=1000,umask=007 /dev/sda1 /media/owncloud</code></p>
+                    </div>
+                    <!--13-->
+                    <div class="item" style="min-height:560px;">
+                        <h2 class="featurette-heading">
+                            Step 13:
+                            <span class="text-muted">Next you will be editing the fstab file. If this is modified wrong the pi will boot into emergency mode, so first we’ll back it up</span>
+                        </h2>
+                        <p class="lead">command <code>sudo cp /etc/fstab /etc/fstab.backup</code></p>
+                        <p class="lead">command <code>sudo nano /etc/fstab</code></p>
+
+                        <p class="lead">Add the following after the last row <code>/dev/sda1 /media/owncloud vfat uid=1000,gid=1000,umask=007 0 0</code></p>
+                        <p class="lead">This will mount the drive automatically on startup. <b>Note:</b> The pi will boot into emergency mode if it cannot find the disk added to fstab, so use caution. You can always edit fstab, even in emergency mode.<code></code></p>
+                    </div>
+                    <!--14-->
+                    <div class="item" style="height:600px;">
+                        <h2 class="featurette-heading">
+                            Step 14:
+                            <span class="text-muted">Now we’ll wrap up and edit two local file to allow 2GB file sizes. Make the changes as listed</span>
+                        </h2>
+                        <p class="lead">command <code>sudo nano .htaccess</code></p>
+                        <p class="lead">Set <code>Php_value upload_max_filesize</code> to <code>2000M</code></p>
+                        <p class="lead">Set <code>Php_value post_max_size</code> to <code>2000M</code></p>
+                        <p class="lead">Set <code>Php_value memory_limit</code> to <code>2000M</code></p>
+                        <p class="lead">command <code>sudo nano .user.ini</code></p>
+                        <p class="lead">Set <code>upload_max_filesize</code> to <code>2000M</code></p>
+                        <p class="lead">Set <code>post_max_size</code> to <code>2000M</code></p>
+                        <p class="lead">Set <code>memory_limit</code> to <code>2000M</code></p>
+                    </div>
+                    <!--15-->
+                    <div class="item" style="height:250px;">
+                        <h2 class="featurette-heading">
+                            Step 15:
+                            <span class="text-muted">From a computer on the same network go to the pi’s ip address in the browser and make an admin ownCloud account.</span>
+                        </h2>
+                        <p class="lead">Your Network Attached Storage device is now working!<code></code></p>
                     </div>
                 </div>
                 <!-- Controls -->
@@ -190,8 +410,9 @@
             <!--<img class="featurette-image img-circle img-responsive pull-right" src="http://placehold.it/500x500">-->
             <h2 class="featurette-heading">
                 Tips:
-                <span class="text-muted">How to not mess up</span>
+                <span class="text-muted">How to finish fast</span>
             </h2>
+            <p class="lead">There are some command that will be useful to know if you are not well versed in terminal-speak</p>
             <!--<p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper.</p>-->
             <!-- Carousel 3 -->
             <div id="carousel-three" class="carousel slide" data-ride="carousel">
@@ -204,29 +425,34 @@
                 <!-- Wrapper for slides -->
                 <div class="carousel-inner">
                     <div class="item active">
-                        <!--<img src="http://placehold.it/1200x315" alt="...">-->
-                        <img class="featurette-image img-circle img-responsive pull-right" src="http://placehold.it/500x500">
-                        <h2 class="featurette-heading">
-                            blah
-                            <span class="text-muted">blah blah</span>
-                        </h2>
-                        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+                        <div class="col-xs-12 col-sm-6 col-md-8">
+                            <h2 class="featurette-heading">
+                                Find what disks are attached
+                                <span class="text-muted"></span>
+                            </h2>
+                            <p class="lead">command <code>sudo fdisk -l</code></p>
+                            <p class="lead">This will list your storage devices, the information most useful here will be at the very bottom of the information presented in the terminal.</p>
+                            <p class="lead">For me<code></code></p>
+                            <p class="lead"><code>Device : /dev/sda1</code></p>
+                            <p class="lead"><code>Type: FAT32</code></p>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-4">
+                            <img class="featurette-image img-responsive pull-right" src="img/tips/tip1.png">
+                        </div>
                     </div>
                     <div class="item">
-                        <img class="featurette-image img-circle img-responsive pull-right" src="http://placehold.it/500x500">
-                        <h2 class="featurette-heading">
-                            blah
-                            <span class="text-muted">blah blah</span>
-                        </h2>
-                        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-                    </div>
-                    <div class="item">
-                        <img class="featurette-image img-circle img-responsive pull-left" src="http://placehold.it/500x500">
-                        <h2 class="featurette-heading">
-                            blah
-                            <span class="text-muted">blah blah</span>
-                        </h2>
-                        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+                        <div class="col-xs-12 col-sm-6 col-md-4">
+                            <img class="featurette-image img-responsive pull-left" src="img/tips/tip2.png">
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-8">
+                            <h2 class="featurette-heading">
+                                Finding your ip address
+                                <span class="text-muted"></span>
+                            </h2>
+                            <p class="lead">Another thing you will want to know throughout this set-up is the wlan0 or eth0 ip address of you pi.<code></code></p>
+                            <p class="lead">command <code>ifconfig</code></p>
+                            <p class="lead">You will use <code>inet addr:</code> from the terminal output, from <code>wlan0</code> if your server will be wireless.</p>
+                        </div>
                     </div>
                 </div>
                 <!-- Controls -->
@@ -314,6 +540,8 @@
     <script src="js/jquery.js"></script>
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
+    <!-- Bootstrap Toggle JavaScript -->
+    <script src="js/bootstrap2-toggle.min.js"></script>
     <!-- Google Analytics -->
     <script>
         (function (i, s, o, g, r, a, m) {
@@ -335,6 +563,19 @@
             });
         });
     });
+    </script>
+    <script>
+        function toggleCarouselList() {
+            //$(".carousel-toggle:has(.item)").children.addClass("active");
+            var nodes = document.getElementById(".carousel-toggle").childNodes;
+            for (var i = 0; i < nodes.length; i++) {
+                if (nodes[i].nodeName.toLowerCase() == 'div') {
+                    nodes[i].addClass("active");
+                }
+
+            }
+            //document.getElementById("fname").value = document.getElementById("fname").value.toUpperCase();
+        }
     </script>
 
 </body>
