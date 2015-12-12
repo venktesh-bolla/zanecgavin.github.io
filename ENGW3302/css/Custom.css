@@ -1,0 +1,17 @@
+﻿/*Nav*/
+
+/*Header*/
+    /*Formatting for image*/
+.profile-pic {
+    height:300px;
+    width:auto;
+}
+/*Section-Portfolio*/
+    /*Add borders to portfolio links*/
+#portfolio .portfolio-item .portfolio-link{
+    border: 1px solid #2C3E50;
+}
+
+/*Section-About*/
+/*Section-Contact*/
+
