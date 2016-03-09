@@ -10,23 +10,28 @@
     <meta name="author" content="Zane Gavin">
 
     <!--icon-->
-    <link rel="icon" href="img/favicon/GearICO.ico">
+    <link rel="icon" href="img/favicon/layeredGear.ico">
+
     <!--Title-->
     <title>Meet Zane</title>
 
+    <!-- Custom Fonts --> <!-- Use Standard Fonts -->
+    <!-- Original -->    
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <!--<link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">-->
+    <!--<link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">-->
+    <!-- Mine - in css/custom.css -->
+    
     <!-- Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom (template) CSS -->
     <link href="css/freelancer.css" rel="stylesheet">
-    
+
     <!--Custom (mine) CSS-->
     <link href="css/Custom.css" rel="stylesheet">
 
-    <!-- Custom Fonts -->
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -83,8 +88,9 @@
                     <img class="img-responsive profile-pic" src="img/Gear_profile.png" alt="">
                     <div class="intro-text">
                         <span class="name">Zane C Gavin</span>
-                        <hr class="star-light">
-                        <span class="skills">Mechanical Engineer - Researcher - Programmer</span>
+                        <!--<hr class="star-light">-->
+                        <img src="img/gearDividers/gear-light.png" class="img-responsive img-centered" alt="" style="width:300px;" />
+                        <span class="skills">Mechanical Engineer - Researcher - Developer</span>
                     </div>
                 </div>
             </div>
@@ -92,78 +98,165 @@
     </header>
 
     <!-- Portfolio Grid Section -->
-    <section id="portfolio">
+   <section id="portfolio">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2>Portfolio</h2>
-                    <hr class="star-primary">
+                    <!--<h2 style="font-family:Britannic;">*1. Portfolio, Brit</h2>
+                    <h2 style="font-family:'Poor Richard';">*2. Portfolio, PR</h2>
+                    <h2 style="font-family:Rockwell;">3. Portfolio, RW</h2>
+                    <h2 style="font-family:TechnicBold;">*4. Portfolio, T B</h2>
+                    <h2 style="font-family:'Segoe Print';">5. Portfolio, SP</h2>-->
+                   
+                    <!--<hr class="star-primary">-->
+                    <img src="img/gearDividers/gear-primary.png" class="img-responsive img-centered" alt="" style="width:300px;" />
                 </div>
             </div>
-            <div class="row">
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
+            <!-- Modal Tabs -->
+
+            <ul class="nav nav-tabs nav-justified" id="tabContent">
+                <li class="active"><a href="#design" data-toggle="tab" style="font-weight:bold;font-size:large;">Design</a></li>
+                <li><a href="#writing" data-toggle="tab" style="font-weight:bold;font-size:large;">Writing / Reports</a></li>
+                <li><a href="#developer" data-toggle="tab" style="font-weight:bold;font-size:large;">Developer</a></li>
+            </ul>
+
+            <div class="tab-content">
+                <div class="tab-pane active" id="design">
+                    <div class="control-group">
+                        <label class="control-label"></label>
+                        <div class="row">
+                            <div class="col-sm-6 portfolio-item">
+                                <a href="#design-FusionPeriph" class="portfolio-link" data-toggle="modal">
+                                    <div class="caption">
+                                        <div class="caption-content">
+                                            <i class="fa fa-search-plus fa-3x"></i>
+                                        </div>
+                                    </div>
+                                    <img src="portfolio/Design/FusionPeripheral/imgs/ThermocontrollerContainer.png" class="img-responsive" alt="">
+                                </a>
+                            </div>
+                            <div class="col-sm-6 portfolio-item">
+                                <a href="#design-RobotUnitBracket" class="portfolio-link" data-toggle="modal">
+                                    <div class="caption">
+                                        <div class="caption-content">
+                                            <i class="fa fa-search-plus fa-3x"></i>
+                                        </div>
+                                    </div>
+                                    <img src="portfolio/Design/RobotUnitBracket/imgs/CustomStraightBracket.png" class="img-responsive" alt="">
+                                </a>
+                            </div>
+                            <div class="col-sm-6 portfolio-item">
+                                <a href="#design-ElecCell" class="portfolio-link" data-toggle="modal">
+                                    <div class="caption">
+                                        <div class="caption-content">
+                                            <i class="fa fa-search-plus fa-3x"></i>
+                                        </div>
+                                    </div>
+                                    <img src="portfolio/Design/ElectrolysisCell/imgs/ElectrolysisAssembly.png" class="img-responsive" alt="">
+                                </a>
+                            </div>
+                            <div class="col-sm-6 portfolio-item">
+                                <a href="#design-LaserSys" class="portfolio-link" data-toggle="modal">
+                                    <div class="caption">
+                                        <div class="caption-content">
+                                            <i class="fa fa-search-plus fa-3x"></i>
+                                        </div>
+                                    </div>
+                                    <img src="portfolio/Design/LaserSystem/imgs/LaserSystem.png" class="img-responsive" alt="">
+                                </a>
                             </div>
                         </div>
-                        <img src="portfolio/modal1-fusionPeriph/imgs/ThermocontrollerContainer.png" class="img-responsive" alt="">
-                    </a>
+                    </div>
                 </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
+                <div class="tab-pane" id="writing">
+                    <div class="control-group">
+                        <label class="control-label"></label>
+                        <div class="row">
+                            <div class="col-sm-6 portfolio-item">
+                                <a href="#writing-CNTRev" class="portfolio-link" data-toggle="modal">
+                                    <div class="caption">
+                                        <div class="caption-content">
+                                            <i class="fa fa-search-plus fa-3x"></i>
+                                        </div>
+                                    </div>
+                                    <img src="portfolio/Writing/CNTFiberProcessingRev/TechnicalReport.png" class="img-responsive" alt="" style="max-height:430px;width:100%;">
+                                </a>
+                            </div>
+                            <div class="col-sm-6 portfolio-item">
+                                <a href="#writing-DiscComm" class="portfolio-link" data-toggle="modal">
+                                    <div class="caption">
+                                        <div class="caption-content">
+                                            <i class="fa fa-search-plus fa-3x"></i>
+                                        </div>
+                                    </div>
+                                    <img src="portfolio/Writing/EngineerDiscourseCommunity/DiscourseCommunity.png" class="img-responsive" alt="" style="max-height:430px;width:100%;">
+                                </a>
+                            </div>
+                            <div class="col-sm-6 portfolio-item">
+                                <a href="#writing-LabRepMatSci" class="portfolio-link" data-toggle="modal">
+                                    <div class="caption">
+                                        <div class="caption-content">
+                                            <i class="fa fa-search-plus fa-3x"></i>
+                                        </div>
+                                    </div>
+                                    <img src="portfolio/Writing/MaterialScienceLabRep/imgs/MatSciReport.png" class="img-responsive" alt="">
+                                </a>
+                            </div>
+                            <div class="col-sm-6 portfolio-item">
+                                <a href="#writing-SenProj" class="portfolio-link" data-toggle="modal">
+                                    <div class="caption">
+                                        <div class="caption-content">
+                                            <i class="fa fa-search-plus fa-3x"></i>
+                                        </div>
+                                    </div>
+                                    <img src="portfolio/Writing/SeniorProject/imgs/SeniorProj.png" class="img-responsive" alt="">
+                                </a>
                             </div>
                         </div>
-                        <img src="portfolio/modal2-robotUnitBracket/imgs/CustomStraightBracket.png" class="img-responsive" alt="">
-                    </a>
+                    </div>
                 </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
+                <div class="tab-pane" id="developer">
+                    <div class="control-group">
+                        <label class="control-label"></label>
+                        <div class="row">
+                            <div class="col-sm-6 portfolio-item">
+                                <a href="#developer-MyWebsite" class="portfolio-link" data-toggle="modal">
+                                    <div class="caption">
+                                        <div class="caption-content">
+                                            <i class="fa fa-search-plus fa-3x"></i>
+                                        </div>
+                                    </div>
+                                    <iframe src="http://zanecgavin.github.io/" style="max-height:430px;width:100%;"></iframe>
+                                </a>
+                            </div>
+                            <div class="col-sm-6 portfolio-item">
+                                <a href="#developer-LabSite" class="portfolio-link" data-toggle="modal">
+                                    <div class="caption">
+                                        <div class="caption-content">
+                                            <i class="fa fa-search-plus fa-3x"></i>
+                                        </div>
+                                    </div>
+                                    <iframe src="https://www.coe.neu.edu/research/onsi" style="max-height:430px;width:100%;"></iframe>
+                                </a>
+                            </div>
+                            <div class="col-sm-6 portfolio-item">
+                                <a href="#developer-RaspiServerHowTo" class="portfolio-link" data-toggle="modal">
+                                    <div class="caption">
+                                        <div class="caption-content">
+                                            <i class="fa fa-search-plus fa-3x"></i>
+                                        </div>
+                                    </div>
+                                    <iframe src="ENGW3302/RasServ/HowTo.html" style="max-height:430px;width:100%;"></iframe>
+                                </a>
                             </div>
                         </div>
-                        <img src="portfolio/modal3-elecCell/imgs/ElectrolysisAssembly.png" class="img-responsive" alt="">
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="portfolio/modal4-laserSys/imgs/LaserSystem.png" class="img-responsive" alt="">
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="portfolio/modal5-labRep/imgs/MatSciReport.png" class="img-responsive" alt="">
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="portfolio/modal6-senProj/imgs/SeniorProj.png" class="img-responsive" alt="">
-                    </a>
+                    </div>
                 </div>
             </div>
+            <!-- Modal End -->
         </div>
-    </section>
+    </section> 
 
     <!-- About Section -->
     <section class="success" id="about">
@@ -171,7 +264,8 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2>About</h2>
-                    <hr class="star-light">
+                    <!--<hr class="star-light">-->
+                    <img src="img/gearDividers/gear-light.png" class="img-responsive img-centered" alt="" style="width:300px;" />
                 </div>
             </div>
             <div class="row">
@@ -195,7 +289,8 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2>Contact Me</h2>
-                    <hr class="star-primary">
+                    <!--<hr class="star-primary">-->
+                    <img src="img/gearDividers/gear-primary.png" class="img-responsive img-centered" alt="" style="width:300px;" />
                 </div>
             </div>
             <div class="row">
@@ -311,7 +406,9 @@
     </div>
 
     <!-- Portfolio Modals -->
-    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+    <!-- Design -->
+    <!-- Design - Fusion Peripheral -->
+    <div class="portfolio-modal modal fade" id="design-FusionPeriph" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
                 <div class="lr">
@@ -324,9 +421,9 @@
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
                             <h2>Thermocontroller and Relay Container</h2>
-                            <hr class="star-primary">
-
-                            <img srcset="portfolio/modal1-fusionPeriph/imgs/ThermocontrollerContainer.png" class="img-responsive img-centered" alt="">
+                            <!--<hr class="star-primary">-->
+                            <img src="img/gearDividers/gear-primary.png" class="img-responsive img-centered" alt="" style="width:300px;" />
+                            <img srcset="portfolio/Design/FusionPeripheral/imgs/ThermocontrollerContainer.png" class="img-responsive img-centered" alt="">
 
                             <p>
                                 This housing is designed for safety (220V-110V relays get hot!) and for organization - for laboratory testing equipment. It contains two <a href="http://www.eurotherm.com/products/controllers/single-loop/2400/2404/">Eurotherm 2404 Temperature Controller/Programmers</a> as well as two solid state relays wired to the controllers. The base is made of 1/2" plywood and the walls are made of 1/8" acrylic.
@@ -353,7 +450,8 @@
             </div>
         </div>
     </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+    <!-- Design - Robot Unit Bracket -->
+    <div class="portfolio-modal modal fade" id="design-RobotUnitBracket" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
                 <div class="lr">
@@ -366,9 +464,9 @@
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
                             <h2>Custom Straight Bracket</h2>
-                            <hr class="star-primary">
-
-                            <img src="portfolio/modal2-robotUnitBracket/imgs/CustomStraightBracket.png" class="img-responsive img-centered" alt="">
+                            <!--<hr class="star-primary">-->
+                            <img src="img/gearDividers/gear-primary.png" class="img-responsive img-centered" alt="" style="width:300px;" />
+                            <img src="portfolio/Design/RobotUnitBracket/imgs/CustomStraightBracket.png" class="img-responsive img-centered" alt="">
                             
                             <p>
                                 This straight bracket was designed as a universal fixture for connecting 40mmx40mm <a href="http://www.robotunits.com/">Robotunits</a>, a modular building material. It was designed because of the need for a low profile connection between beds for testing robots during my time at iRobot. The brackets were machined from 5mm thick aluminum, on a CNC Machine.
@@ -395,7 +493,8 @@
             </div>
         </div>
     </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+    <!-- Design - Electrolysis Cell -->
+    <div class=" portfolio-modal modal fade" id="design-ElecCell" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
                 <div class="lr">
@@ -408,24 +507,40 @@
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
                             <h2>Electrolysis Cell</h2>
-                            <hr class="star-primary">
-                            <img src="portfolio/modal3-elecCell/imgs/ElectrolysisAssembly.png" class="img-responsive img-centered" alt="">
-                            
+                            <!--<hr class="star-primary">-->
+                            <img src="img/gearDividers/gear-primary.png" class="img-responsive img-centered" alt="" style="width:300px;" />
+                            <img src="portfolio/Design/ElectrolysisCell/imgs/ElectrolysisAssembly.png" class="img-responsive img-centered" alt="">
+
                             <p>
                                 This cell was designed because of the need for an efficient, safe and less wasteful electrolysis cell. With the original cell, the 10mm<sup>2</sup> Al foil is loaded from the bottom. This means the acidic electrolyte has to be poured out after every anodization, which could otherwise be reused. With the new, top loaded design the turnaround for anodization will be much faster. Because of the corrosive nature of oxalic acid this cell is machined from unreactive teflon.
                             </p>
-                            
+                            <!--
+                            <div class="row">
+                                    <div class="col-lg-6">
+                                    <p>When starting this project, I began by hand drawing some prelimary versions of this cell and asked for suggestions. The former cell was a cylinder which would be difficult to machine and offered no direct benefits so a square design was chosen.</p>
+                                </div>
+                                <div class="col-lg-6">
+                                    <iframe src="portfolio/Design/ElectrolysisCell/docs/ElectrolysisHandDrawn.pdf" style="width:100%; height:600px;" border="0"></iframe>
+                                </div>
+                            </div>
+                                    -->
                             <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong><a href="https://www.coe.neu.edu/research/onsi/" target="_blank">Carbon Nanostructures Research Group, NEU</a>
+                                <li>
+                                    Client:
+                                    <strong>
+                                        <a href="https://www.coe.neu.edu/research/onsi/" target="_blank">Carbon Nanostructures Research Group, NEU</a>
                                     </strong>
                                 </li>
-                                <li>Date:
-                                    <strong><a href="#">December 2014</a>
+                                <li>
+                                    Date:
+                                    <strong>
+                                        <a href="#">December 2014</a>
                                     </strong>
                                 </li>
-                                <li>Service:
-                                    <strong><a href="#">Test Equipment Design</a>
+                                <li>
+                                    Service:
+                                    <strong>
+                                        <a href="#">Test Equipment Design</a>
                                     </strong>
                                 </li>
                             </ul>
@@ -436,7 +551,8 @@
             </div>
         </div>
     </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+    <!-- Design - Laser System -->
+    <div class="portfolio-modal modal fade" id="design-LaserSys" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
                 <div class="lr">
@@ -449,14 +565,14 @@
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
                             <h2>Novel Laser Density Measurement System</h2>
-                            <hr class="star-primary">
+                            <!--<hr class="star-primary">-->
+                            <img src="img/gearDividers/gear-primary.png" class="img-responsive img-centered" alt="" style="width:300px;" />
 
-                            <img src="portfolio/modal4-laserSys/imgs/LaserSystem.png" class="img-responsive img-centered" alt="">
+                            <img src="portfolio/Design/LaserSystem/imgs/LaserSystem.png" class="img-responsive img-centered" alt="">
                             
                             <p>
-                                This setup is a theoretical design for a system that measures the relative density of a gelatinous solution within a test tube. It implements the use of a <a href="http://www.dragonlasers.com/655nm-Red-Diode-Laser-System.html">Dragon Lasers, 655nm Laser System</a>. It was created during my time at the USDA - Food Quality Lab, to confirm the results of other test equipment. 
+                                 This setup is a theoretical design for a system that measures the relative density of a gelatinous solution within a test tube. It implements the use of a <a href="http://www.dragonlasers.com/655nm-Red-Diode-Laser-System.html">Dragon Lasers, 655nm Laser System</a>. It was created during my time at the USDA - Food Quality Lab, to confirm the results of other test equipment. 
                             </p>
-
                             <ul class="list-inline item-details">
                                 <li>Client:
                                     <strong><a href="http://www.ars.usda.gov/main/site_main.htm?modecode=80-42-05-90">USDA - Food Quality Lab</a>
@@ -471,6 +587,7 @@
                                     </strong>
                                 </li>
                             </ul>
+
                             <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                         </div>
                     </div>
@@ -478,7 +595,91 @@
             </div>
         </div>
     </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+    <!-- Writing -->
+    <!-- Writing - CNTFiber Processing Review -->
+    <div class="portfolio-modal modal fade" id="writing-CNTRev" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="modal-body">
+                            <h2>Technical Report: CNT Fiber Processing</h2>
+                            <!--<hr class="star-primary">-->
+                            <img src="img/gearDividers/gear-primary.png" class="img-responsive img-centered" alt="" style="width:300px;" />
+                            <iframe src="portfolio/Writing/CNTFiberProcessingRev/CNT Fiber - Thermal Processing.pdf" style="width:100%; height:600px;" border="0"></iframe>
+                            <p></p><!--Text-->
+
+                            <ul class="list-inline item-details">
+
+                                <li>
+                                    <strong>
+                                        <a href="portfolio/Writing/CNTFiberProcessingRev/CNT Fiber - Thermal Processing.pdf" target="_blank"><abbr title="Open File in New Tab">Open File</abbr></a>
+                                    </strong>
+                                <li>
+                                <li>
+                                    Date:
+                                    <strong>
+                                        <a href="#">Nov. 9, 2015</a>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Writing - Engineering Discourse Community -->
+    <div class="portfolio-modal modal fade" id="writing-DiscComm" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="modal-body">
+                            <h2>Engineering Discourse Community Report</h2>
+                            <!--<hr class="star-primary">-->
+                            <img src="img/gearDividers/gear-primary.png" class="img-responsive img-centered" alt="" style="width:300px;" />
+                            <iframe src="Portfolio/Writing/EngineerDiscourseCommunity/DiscourseCommunity.pdf" style="width:100%; height:600px;" border="0"></iframe>
+
+                            <p>
+                                This report was written as an analysis of the intercommunication of the engineering and science communities 
+                            </p>
+
+                            <ul class="list-inline item-details">
+                                <li>
+                                    <strong>
+                                        <a href="Portfolio/Writing/EngineerDiscourseCommunity/DiscourseCommunity.pdf" target="_blank"><abbr title="Open File in New Tab">Open File</abbr></a>
+                                    </strong>
+                                </li>
+                                <li>
+                                    Date:
+                                    <strong>
+                                        <a href="#">Oct. 14, 2015</a>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Writing - Material Science Lab Rep -->
+    <div class="portfolio-modal modal fade" id="writing-LabRepMatSci" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
                 <div class="lr">
@@ -491,9 +692,10 @@
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
                             <h2>Material Science Lab Report</h2>
-                            <hr class="star-primary">
+                            <!--<hr class="star-primary">-->
+                            <img src="img/gearDividers/gear-primary.png" class="img-responsive img-centered" alt="" style="width:300px;" />
                            
-                            <iframe src="portfolio/modal5-labRep/imgs/MatSciReport.pdf" style="width:100%; height:400px;" border="0"></iframe>
+                            <iframe src="portfolio/Writing/MaterialScienceLabRep/imgs/MatSciReport.pdf" style="width:100%; height:400px;" border="0"></iframe>
                             
                             <p>
                                 This is a formal memo written for a materials science course at northeastern university, in which after hardness and strength testing, I prescribe the best material for two specific products.
@@ -520,7 +722,8 @@
             </div>
         </div>
     </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+    <!-- Writing - Senior Project Report -->
+    <div class="portfolio-modal modal fade" id="writing-SenProj" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
                 <div class="lr">
@@ -533,9 +736,9 @@
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
                             <h2>Alternative Earthquake Safe Housing</h2>                            
-                            <hr class="star-primary">
-
-                            <iframe src="portfolio/modal6-senProj/imgs/SeniorProj.pdf" style="width:100%; height:400px;" border="0"></iframe>
+                            <!--<hr class="star-primary">-->
+                            <img src="img/gearDividers/gear-primary.png" class="img-responsive img-centered" alt="" style="width:300px;" />
+                            <iframe src="portfolio/Writing/SeniorProject/imgs/SeniorProj.pdf" style="width:100%; height:400px;" border="0"></iframe>
 
                             <p>
                                 This is my senior high school product, a digital pamphlet that serves as a guide for an economic, earthquake-safe and sustainable housing option for the developing world.
@@ -562,7 +765,110 @@
             </div>
         </div>
     </div>
+    <!-- Developer -->
+    <!--Developer - My Website -->
+    <div id="developer-MyWebsite" class="portfolio-modal modal fade">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="modal-body">
+                            <h2>My Website</h2>
+                            <!--<hr class="star-primary">-->
+                            <img src="img/gearDividers/gear-primary.png" class="img-responsive img-centered" alt="" style="width:300px;" />
+                            <iframe src="http://zanecgavin.github.io" style="width:100%; height:400px;" border="0"></iframe>
+                            <p>
+                                If it's not already clear..., this is my website and I made it - via html and not squarespace. Granted I had some help from a <a href="http://startbootstrap.com/template-overviews/freelancer/" target="_blank">bootstrap template</a>, but I have done my best to make it reflect me and have painstakingly added many features and user interface elements that I think make the site more intuitive. I am not a computer science major, but I am very proud of this website and the many other programming oriented projects I have completed and thouroughly enjoyed. I encourage you to inspect this website (ctrl+shift+I), or not, and <a href="mailto:gavin.z@husky.neu.edu">mail me</a> any suggestions you have. They will be greatly appreciated.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Developer - Lab Website -->
+    <div id="developer-LabSite" class="portfolio-modal modal fade">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="modal-body">
+                            <h2>Research Group Website</h2>
+                            <h4><a href="https://www.coe.neu.edu/research/onsi" target="_blank">Please open website in new tab for better experience</a></h4>
+                            <!--<hr class="star-primary">-->
+                            <img src="img/gearDividers/gear-primary.png" class="img-responsive img-centered" alt="" style="width:300px;" />
+                            <iframe src="https://www.coe.neu.edu/research/onsi" style="width:100%; height:400px;" border="0"></iframe>
+                            <p>
+                                This is the website I made for the research group that I am a part of. The research group itself does research in a variety of nanostructured and engineered materials, but my research focuses on nanostructured carbon materials - specifically carbon nanotube fiber.
+                            </p>
 
+                            <ul class="list-inline item-details">
+
+                                <li>
+                                    <strong>
+                                        <a href="https://www.coe.neu.edu/research/onsi" target="_blank"><abbr title="Open Page in New Tab">Open Page</abbr></a>
+                                    </strong>
+                                <li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Developer - Raspberry Pi Server How To -->
+    <div id="developer-RaspiServerHowTo" class="portfolio-modal modal fade">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="modal-body">
+                            <h2>Raspberry Pi Server: Web Based Project</h2>
+                            <h4><a href="ENGW3302/RasServ/HowTo.html " target="_blank">Please open website in new tab for better experience</a></h4>
+                            <!--<hr class="star-primary">-->
+                            <img src="img/gearDividers/gear-primary.png" class="img-responsive img-centered" alt="" style="width:300px;" />
+                            <iframe src="ENGW3302/RasServ/HowTo.html" style="width:100%; height:400px;" border="0"></iframe>
+                            <p>
+                                This tutorial was created as project for an across the disciplines writing class. The goal was to try something new and write about it in some web-based way; naturally the most popular choice of presentation was a blog. I chose to make a file server with a raspberry pi and 128 GB flash drive. In the end, I realized that the system I put together, limited by software, was not as robust as I would have liked - so I took it apart and am currently working on a better system.
+                            </p>
+
+                            <ul class="list-inline item-details">
+
+                                <li>
+                                    <strong>
+                                        <a href="ENGW3302/RasServ/HowTo.html" target="_blank"><abbr title="Open Page in New Tab">Open Page</abbr></a>
+                                    </strong>
+                                <li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
 
