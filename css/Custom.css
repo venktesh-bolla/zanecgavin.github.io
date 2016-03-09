@@ -1,44 +1,4 @@
-﻿/*Fonts*/    
-/*
-font-family:Britannic;
-font-family:'Poor Richard';
-font-family:TechnicBold;
-font-family:Rockwell;
-font-family:'Segoe Print';
-*/
-body,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-header .intro-text .name,
-.navbar {
-    font-family:Britannic;
-   
-}
-body{
-    font-family:TechnicLite;
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    /*font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;*/
-    font-family:;
-}
-header .intro-text .name {
-    /*font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;*/
-    font-family:;
-}
-.navbar {
-    /*font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;*/
-    font-family:;
-}
-/*Nav*/
+﻿/*Nav*/
 
 /*Header*/
     /*Formatting for image*/
@@ -51,6 +11,7 @@ header .intro-text .name {
 #portfolio .portfolio-item .portfolio-link{
     border: 1px solid #2C3E50;
 }
+
 /*Section-About*/
 /*Section-Contact*/
 
