@@ -1,11 +1,28 @@
 ﻿/*Fonts*/    
-/*
-font-family:Britannic;
-font-family:'Poor Richard';
-font-family:TechnicBold;
-font-family:Rockwell;
-font-family:'Segoe Print';
-*/
+@font-face{
+    font-family: 'AmaticSc';
+    src: url('../fonts/amatic/AmaticSC-Regular.ttf?v=4.2.0') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face{
+    font-family: 'AmaticBold';
+    src: url('../fonts/amatic/Amatic-Bold.ttf?v=4.2.0') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face{
+    font-family: 'BritannicB';
+    src: url('../fonts/britannic/BRITANIC.TTF?v=4.2.0') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face{
+    font-family: 'TechnicLiteR';
+    src: url('../fonts/technic/techl___.ttf?v=4.2.0') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 body,
 h1,
 h2,
@@ -15,29 +32,28 @@ h5,
 h6,
 header .intro-text .name,
 .navbar {
-    font-family:Britannic;
-   
+    font-family:BritannicB;
 }
 body{
-    font-family:TechnicLite;
+    font-family:TechnicLiteR;
 }
-/*h1,
+h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    /*font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;*/
     font-family:;
 }
 header .intro-text .name {
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    /*font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;*/
     font-family:;
 }
 .navbar {
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    /*font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;*/
     font-family:;
-}*/
+}
 /*Nav*/
 
 /*Header*/
