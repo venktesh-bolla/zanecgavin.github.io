@@ -1,5 +1,5 @@
 ﻿/*Fonts*/    
-@font-face{
+/*@font-face{
     font-family: 'AmaticSc';
     src: url('../fonts/amatic/AmaticSC-Regular.ttf?v=4.2.0') format('truetype');
     font-weight: normal;
@@ -10,18 +10,30 @@
     src: url('../fonts/amatic/Amatic-Bold.ttf?v=4.2.0') format('truetype');
     font-weight: normal;
     font-style: normal;
+}*/
+@font-face{ 
+	font-family: 'BritanicB';
+	src: url('../fonts/britanic/britanic-webfont.eot');
+	src: url('../fonts/britanic/britanic-webfont.eot?#iefix') format('embedded-opentype'),
+	     url('../fonts/britanic/britanic-webfont.woff') format('woff'),
+	     url('../fonts/britanic/britanic-webfont.ttf') format('truetype'),
+	     url('../fonts/britanic/britanic-webfont.svg#webfont') format('svg');
 }
-@font-face{
-    font-family: 'BritannicB';
-    src: url('../fonts/britannic/BRITANIC.TTF?v=4.2.0') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+@font-face{ 
+	font-family: 'JuraLight';
+	src: url('../fonts/jura/jura-light-webfont.eot');
+	src: url('../fonts/jura/jura-light-webfont.eot?#iefix') format('embedded-opentype'),
+	     url('../fonts/jura/jura-light-webfont.woff') format('woff'),
+	     url('../fonts/jura/jura-light-webfont.ttf') format('truetype'),
+	     url('../fonts/jura/jura-light-webfont.svg#webfont') format('svg');
 }
-@font-face{
-    font-family: 'TechnicLiteR';
-    src: url('../fonts/technic/techl___.ttf?v=4.2.0') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+@font-face{ 
+	font-family: 'NerisLight';
+	src: url('../fonts/neris/neris-light-webfont.eot');
+	src: url('../fonts/neris/neris-light-webfont.eot?#iefix') format('embedded-opentype'),
+	     url('../fonts/neris/neris-light-webfont.woff') format('woff'),
+	     url('../fonts/neris/neris-light-webfont.ttf') format('truetype'),
+	     url('../fonts/neris/neris-light-webfont.svg#webfont') format('svg');
 }
 body,
 h1,
@@ -32,28 +44,29 @@ h5,
 h6,
 header .intro-text .name,
 .navbar {
-    font-family:BritannicB;
+    font-family:BritanicB;
 }
 body{
-    font-family:TechnicLiteR;
+    font-family:JuraLight;
+    
 }
-h1,
+/*h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-    /*font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;*/
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-family:;
 }
 header .intro-text .name {
-    /*font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;*/
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-family:;
 }
 .navbar {
-    /*font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;*/
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-family:;
-}
+}*/
 /*Nav*/
 
 /*Header*/
